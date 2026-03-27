@@ -1,5 +1,7 @@
 # ENA - Enlace Neural con Avatar
 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 **Sistema de interfaz cerebro-máquina no invasivo, accesible y basado en hardware comercial probado.**
 
 ENA permite a personas con movilidad reducida controlar avatares digitales y dispositivos mediante señales cerebrales, a un costo de **USD 299** (vs. USD 40,000+ de soluciones invasivas).
