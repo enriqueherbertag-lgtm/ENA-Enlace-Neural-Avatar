@@ -74,14 +74,6 @@ ENA-Enlace-Neural-Avatar/
 
 ---
 
-## Licencia
-
-- **Código**: Apache 2.0 (incluye protección de patentes)
-- **Hardware**: CERN-OHL-P (permisiva)
-- **Documentación**: CC BY-SA 4.0
-
----
-
 ## Autor
 
 **Enrique Aguayo H.**  
