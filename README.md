@@ -1,5 +1,6 @@
 # ENA - Enlace Neural con Avatar
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19372267.svg)](https://doi.org/10.5281/zenodo.19372267)
 
 **Sistema de interfaz cerebro-máquina no invasivo, accesible y basado en hardware comercial probado.**
 
