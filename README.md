@@ -1,115 +1,87 @@
-# ENA - Enlace Neural con Avatar
+# ENA: Interfaz cerebro-máquina sin cirugía
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19372267.svg)](https://doi.org/10.5281/zenodo.19372267)
+[![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
+[![EN](https://img.shields.io/badge/English-version-blue.svg)](./README.en.md)
 
-**Sistema de interfaz cerebro-máquina no invasivo, accesible y basado en hardware comercial probado.**
+Las interfaces cerebro-máquina más famosas requieren cirugía. Implantes, electrodos en el cerebro, riesgos de infección, rechazo y procedimientos costosos. Eso las limita a laboratorios o casos extremos.
 
-ENA permite a personas con movilidad reducida controlar avatares digitales y dispositivos mediante señales cerebrales, a un costo de **USD 299** (vs. USD 40,000+ de soluciones invasivas).
+**ENA nace para cambiar eso.**
 
----
+## Que es
 
-## Descripción General
+ENA (Electro Neural Adapter) es una interfaz cerebro-máquina no invasiva, modular y de código abierto. Se coloca detrás de la oreja (región retroauricular) y opera sin cirugía, mediante electrodos secos que leen señales EEG y estimulación tACS para enviar sensaciones.
 
-ENA es una plataforma de código abierto que combina:
-- **Hardware validado**: NeuroSky MindWave, OpenBCI, Raspberry Pi
-- **Software científico**: BrainFlow, NeuroKit2, MNE-Python
-- **Algoritmos probados**: Clasificación de imaginación motora, P300, SSVEP
-- **Aplicaciones concretas**: Comunicación para ELA, control de silla de ruedas, rehabilitación post-ACV
+## Que hace
 
----
+- **Lee señales del cerebro**: 8–16 canales EEG capturan la actividad neuronal desde la superficie del cuero cabelludo.
+- **Escribe sensaciones**: estimulación tACS (0–250 Hz, hasta 2 mA) permite enviar tacto, presión o temperatura al usuario.
+- **Detecta movimiento**: IMU (acelerómetro + giroscopio) para interpretar intención motora.
+- **Conecta sin cables**: Bluetooth 5.2, Wi-Fi y USB-C para comunicarse con prótesis, CORPUS u otros dispositivos.
+- **Funciona todo el día**: batería recargable con 8–12 horas de uso continuo.
 
-## Problema que Resuelve
+Todo en un dispositivo de menos de 50 gramos.
 
-- Personas con parálisis o ELA sin opciones de comunicación accesibles
-- Tecnologías existentes: invasivas (USD 40,000+) o limitadas
-- 70 millones de personas con movilidad reducida globalmente
+## Para quién es
 
----
+- **Personas con prótesis**: pueden sentir lo que tocan y controlar la mano robótica con el pensamiento.
+- **Usuarios de CORPUS**: pueden operar el cuerpo artificial a distancia y recibir retroalimentación sensorial.
+- **Rehabilitación neurológica**: estimulación para pacientes con daño motor.
+- **Investigación en interfaces cerebro-máquina**: plataforma abierta para desarrollar nuevas aplicaciones.
 
-## Solución ENA
+## Ventajas principales
 
-| Componente | Descripción |
-|:---|:---|
-| **Hardware** | EEG comercial (NeuroSky USD 99, OpenBCI USD 349) + Raspberry Pi 4 (USD 55) |
-| **Software** | Procesamiento local, clasificación ML, control de avatar |
-| **Precio final** | USD 299 (kit completo preconfigurado) |
-| **Aplicaciones** | Comunicación, silla de ruedas, rehabilitación |
+- **Sin cirugía**: se coloca como un audífono, sin riesgos ni procedimientos invasivos.
+- **Bidireccional**: no solo lee el cerebro, también escribe sensaciones.
+- **Ligero y portátil**: menos de 50 gramos, 8–12 horas de batería.
+- **Integrado con CORPUS**: permite que un humano controle el cuerpo artificial y sienta lo que él siente.
 
----
+## Estado actual
 
-## Validación Científica
+- Concepto definido
+- Arquitectura documentada
+- 8–16 canales EEG, estimulación tACS, IMU
+- Comunicación Bluetooth 5.2, Wi-Fi, USB-C
+- Batería recargable (8–12 horas)
+- Peso menor a 50 gramos
+- Prototipo (pendiente)
+- Validación clínica (pendiente)
 
-Basado en estudios revisados por pares:
-- **P300 Speller para ELA**: Nature 2017
-- **Control SSVEP de silla de ruedas**: IEEE Transactions 2020
-- **Neurofeedback para rehabilitación post-ACV**: Journal of NeuroEngineering 2019
+## Proyectos relacionados
 
----
+- CORPUS — sistema corporal artificial
+- Quantum-Flux — comunicaciones resilientes
+- ShieldAir — torres de producción de oxígeno
+- Motor de Oxígeno — propulsión limpia
 
-## Estructura del Repositorio
-
-```
-ENA-Enlace-Neural-Avatar/
-├── README.md
-├── LICENSE
-├── docs/
-│   ├── manual-usuario.md
-│   ├── guia-instalacion.md
-│   ├── casos-uso.md
-│   └── validacion-clinica.md
-├── hardware/
-│   ├── neurosky-guide.md
-│   ├── openbci-guide.md
-│   └── raspberry-pi-setup.md
-├── software/
-│   ├── eeg-reader/
-│   ├── classifier/
-│   ├── avatar/
-│   └── examples/
-├── data/
-└── comunidad/
-    ├── CONTRIBUTING.md
-    └── CODE_OF_CONDUCT.md
-```
 ## Licencia
 
 Copyright © 2026 Enrique Aguayo. Todos los derechos reservados.
 
 Este proyecto está protegido por derechos de autor.
 
-**PERMITIDO:**
+PERMITIDO:
 - Uso no comercial con fines educativos o de investigación.
 - Distribución sin modificación, siempre que se mantenga esta licencia y se dé crédito al autor.
 
-**PROHIBIDO sin autorización expresa por escrito:**
+PROHIBIDO sin autorización expresa por escrito:
 - Uso comercial (incluyendo, pero no limitado a: ofrecerlo como servicio, SaaS, suscripción, integración en productos que generen ingresos, o cualquier uso que genere beneficio económico directo o indirecto).
 - Modificación para entornos de producción.
 - Distribución de versiones modificadas sin autorización.
 
 Para licencias comerciales, soporte técnico, pilotos empresariales o consultas:
-Contacto: **eaguayo@migst.cl**
+Contacto: eaguayo@migst.cl
 
 Cualquier uso fuera de los términos permitidos requiere permiso previo del autor.
 
 Las consultas comerciales son bienvenidas y se responderán en un plazo máximo de 7 días hábiles.
----
 
 ## Autor
 
-**Enrique Aguayo H.**  
-Mackiber Labs  
-Contacto: eaguayo@migst.cl  
-ORCID: 0009-0004-4615-6825  
+Enrique Aguayo H.
+Mackiber Labs
+Contacto: eaguayo@migst.cl
+ORCID: 0009-0004-4615-6825
 GitHub: @enriqueherbertag-lgtm
 
-Documentación asistida por **Ana (DeepSeek)** , IA para investigación y optimización técnica.
-
----
-
-## Cómo Contribuir
-
-Revisa [`CONTRIBUTING.md`](comunidad/CONTRIBUTING.md) para pautas de colaboración.
-
----
-
-> *"Finalmente, una interfaz cerebro-máquina que no requiere cirugía, no cuesta una fortuna, y funciona con hardware probado en miles de personas."*
+Documentación asistida por Ana (DeepSeek), IA para investigación y optimización técnica.
