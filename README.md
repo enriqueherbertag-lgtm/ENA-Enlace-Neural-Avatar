@@ -47,6 +47,10 @@ Todo en un dispositivo de menos de 50 gramos.
 - Prototipo (pendiente)
 - Validación clínica (pendiente)
 
+  ## Documentación adicional
+
+- **[Control de drones con ENA](docs/drones.md)**: caso de uso conceptual para operar drones (o enjambres) mediante señales cerebrales, sin joystick.
+
 ## Proyectos relacionados
 
 - CORPUS — sistema corporal artificial
